@@ -2,9 +2,7 @@ name: Knock Knock
 
 on:
   schedule:
-    - cron: "0 0 * * 1-5"
-
-on: push
+    - cron: "1 0 * * 1,2,3,4,5"
 
 jobs:
   auto_commit:
@@ -31,16 +29,16 @@ jobs:
             git config --local user.name "Sep"
             git add -A
 
-            arr[0]="chore(bot): 😂 auto commit"
-            arr[1]="chore(bot): 😱 auto commit"
-            arr[2]="chore(bot): 👿 auto commit"
-            arr[3]="chore(bot): 💩 auto commit"
-            arr[4]="chore(bot): 🙏 auto commit"
-            arr[5]="chore(bot): 🙈 auto commit"
-            arr[6]="chore(bot): 🐐 auto commit"
-            arr[7]="chore(bot): 🤖 auto commit"
-            arr[8]="chore(bot): 🟩 auto commit"
-            arr[9]="chore(bot): 👻 auto commit"
+            arr[0]="chore(bot): 😂 knock-knock"
+            arr[1]="chore(bot): 😱 knock-knock"
+            arr[2]="chore(bot): 👿 knock-knock"
+            arr[3]="chore(bot): 💩 knock-knock"
+            arr[4]="chore(bot): 🙏 knock-knock"
+            arr[5]="chore(bot): 🙈 knock-knock"
+            arr[6]="chore(bot): 🐐 knock-knock"
+            arr[7]="chore(bot): 🤖 knock-knock"
+            arr[8]="chore(bot): 🟩 knock-knock"
+            arr[9]="chore(bot): 👻 knock-knock"
 
             rand=$[$RANDOM % ${#arr[@]}]
 
