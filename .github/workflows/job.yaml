@@ -2,7 +2,9 @@ name: Knock Knock
 
 on:
   schedule:
-    - cron: '0 0 * * 1-5'
+    - cron: "0 0 * * 1-5"
+
+on: push
 
 jobs:
   auto_commit:
