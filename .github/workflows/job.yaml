@@ -1,8 +1,8 @@
 name: Knock Knock
 
-on:
-  schedule:
-    - cron: "1 0 * * 1,2,3,4,5"
+on: push
+  #schedule:
+    #- cron: "1 0 * * 1,2,3,4,5"
 
 jobs:
   auto_commit:
@@ -26,7 +26,7 @@ jobs:
       - name: Commit changes
         run: |
             git config --local user.email "ryfthink@gmail.com"
-            git config --local user.name "Sep"
+            git config --local user.name "oksep"
             git add -A
 
             arr[0]="chore(bot): 😂 knock-knock"
